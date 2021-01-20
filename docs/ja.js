@@ -26,16 +26,6 @@ function openZoom() {
     }
     document.getElementById('classnsass').setAttribute('hidden', true)
     document.getElementById('target').play();
-    setTimeout(function(){
-        document.getElementById('lol').play();
-        setTimeout(function(){
-            document.getElementById('ha').play();
-    }, 2000);
-}, 2000);
     
 }
 document.getElementById('target').addEventListener('ended',fadeOutEffect,false);
-
-
-
-
