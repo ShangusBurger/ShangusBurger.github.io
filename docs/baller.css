@@ -9,12 +9,11 @@ body {
  position: absolute;
 }
 img {
-  width: 400px;
+width: 400px;
 }
 
-.coochie {
-}
 .hoochiecoochie{
+  margin-top: 100px;
 }
 .row:after {
  content: "";

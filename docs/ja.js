@@ -12,7 +12,7 @@ function fadeOutEffect() {
     }, 20);
     fadeTarget.style.zIndex = "-1";
 
-var list = document.getElementsByClassName('coochie')
+var list = document.getElementsByName('coochie')
 
     for(var a=0; a < list.length; a++){
     list[a].removeAttribute('hidden');
