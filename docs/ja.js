@@ -31,6 +31,8 @@ function openZoom() {
     document.getElementById('target').play();
     document.getElementById('aud').play();
     document.getElementById('blk').remove();
+    document.getElementById('preinfo').remove();
+
 }
 
 document.getElementById('target').addEventListener('ended',fadeOutEffect,false);
