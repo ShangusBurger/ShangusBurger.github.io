@@ -35,7 +35,11 @@ function openZoom() {
     document.getElementById('target').play();
     document.getElementById('aud').play();
     document.getElementById('blk').remove();
-    document.getElementById('preinfo').remove();
+    setTimeout(() => {
+        document.getElementById('preinfo').remove();
+        
+    }, 5000)
+    
 
 }
 
