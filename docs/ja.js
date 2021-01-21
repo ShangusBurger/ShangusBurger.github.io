@@ -18,6 +18,10 @@ function fadeOutEffect() {
         }
     }, 100);
     setTimeout(() => {
+        document.getElementById('elevatormusic').play();
+        document.getElementById('elevatormusic').volume = .05;
+    }, 5000);
+    setTimeout(() => {
         fadeTarget.style.zIndex = "-1";
         document.getElementById("info").removeAttribute('hidden');
     }, 10000);
@@ -33,6 +37,10 @@ function openZoom() {
     document.getElementById('blk').remove();
     document.getElementById('preinfo').remove();
 
+}
+
+function pause() {
+    document.getElementById('elevatormusic').pause();
 }
 
 document.getElementById('target').addEventListener('ended',fadeOutEffect,false);
