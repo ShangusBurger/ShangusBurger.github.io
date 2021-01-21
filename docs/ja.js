@@ -1,4 +1,11 @@
 function fadeOutEffect() {
+
+    var list = document.getElementsByName('coochie')
+
+    for(var a=0; a < list.length; a++){
+    list[a].removeAttribute('hidden');
+    }
+
     var fadeTarget = document.getElementById("target");
     var fadeEffect = setInterval(function () {
         if (!fadeTarget.style.opacity) {
@@ -9,23 +16,22 @@ function fadeOutEffect() {
         } else {
             clearInterval(fadeEffect);
         }
-    }, 20);
-    fadeTarget.style.zIndex = "-1";
-
-var list = document.getElementsByName('coochie')
-
-    for(var a=0; a < list.length; a++){
-    list[a].removeAttribute('hidden');
-    }
-}
-function openZoom() {
-    var list = document.getElementsByClassName('hoochiecoochie')
-
-        for(var a=0; a < list.length; a++){
-        list[a].removeAttribute('hidden');
-    }
-    document.getElementById('classnsass').setAttribute('hidden', true)
-    document.getElementById('target').play();
+    }, 100);
+    setTimeout(() => {
+        fadeTarget.style.zIndex = "-1";
+        document.getElementById("info").removeAttribute('hidden');
+    }, 10000);
     
 }
+function openZoom() {
+
+    var button =  document.getElementById('classnsass');
+    button.style.opacity = "0";
+    button.style.zIndex = "-3";
+    document.getElementById('target').play();
+    document.getElementById('aud').play();
+    document.getElementById('blk').remove();
+}
+
 document.getElementById('target').addEventListener('ended',fadeOutEffect,false);
+

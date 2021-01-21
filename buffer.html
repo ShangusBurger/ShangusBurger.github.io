@@ -9,39 +9,45 @@
 
 </head>
 <body style="background-image: url('media/wood.jpg');">
-<div class="hoochiecoochie" id="mid">
-  <video id="target" style="z-index: 1;" height="500">
-    <source src="media/darkness.mp4" type="video/mp4">
+  <img id="blk" src="media/1920x1080-black-solid-color-background.jpg" height="720" width="1280" style="position: absolute; margin-left: -640px; z-index: 5;">
+<div class="hoochiecoochie" id="mid" color>
+  <video id="target" style="z-index: 1;" height="720" muted>
+    <source src="media/LobbyVideo.webm" type="video/webm">
   </video>
-  <button onclick="openZoom()" id="classnsass" style="z-index: 2; margin-top: -250px;">Join Zoom Livestream</button>
-    <a class="column in" name="coochie" hidden href="https://pigeon.dog/" target="_blank">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="media/Room-2_Back_ushav.png" class="a"></img>
-          </div>
-            <img src="media/Room-2_Front_dylanj_inv.png" class="b"></img>
+  <audio id="aud">
+    <source  src="media/LobbyAudio.mp3" type="audio/mp3">
+  </audio>
+  <button onclick="openZoom()" id="classnsass" style="z-index: 10; margin-top: -400px;">Join Zoom Livestream</button>
+
+  <a class="column in" name="coochie" hidden href="https://pigeon.dog/" target="_blank">
+     <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img class="card" src="media/Room-2_Back_ushav.png" class="a"></img>
+         </div>
+           <img class="card" src="media/Room-2_Front_dylanj_inv.png" class="b"></img>
+      </div>
+    </div></a>
+   <a class="column in" name="coochie" hidden style="margin-right: 750px;"href="https://www.shanevincentmusic.com/" target="_blank">
+    <div class="flip-card">
+       <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img class="card" src="media/Room-1_Back_ushav.png" class="a"></img>
         </div>
-      </div></a>
-    <a class="column in" name="coochie" hidden style="margin-right: 750px;"href="https://www.shanevincentmusic.com/" target="_blank">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="media/Room-1_Back_ushav.png" class="a"></img>
-          </div>
-            <img src="media/Room-1_Front_ushav_inv.png" class="b"></img>
+          <img class="card" src="media/Room-1_Front_ushav_inv.png" class="b"></img>
+      </div>
+    </div></a>
+   <a class="column in" name="coochie" hidden style="margin-left: 750px;"href="https://www.merriam-webster.com/dictionary/help" target="_blank">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="flip-card-front">
+          <img class="card" src="media/Room-3_Back_ushav.png" class="a"></img>
         </div>
-      </div></a>
-    <a class="column in" name="coochie" hidden style="margin-left: 750px;"href="https://www.merriam-webster.com/dictionary/help" target="_blank">
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="media/Room-3_Back_ushav.png" class="a"></img>
-          </div>
-            <img src="media/Room-3_Front_ushav_inv.png" class="b"></img>
-        </div>
-      </div></a>
+          <img class="card" src="media/Room-3_Front_ushav_inv.png" class="b"></img>
+      </div>
+    </div></a>
 </div> 
+<p hidden id="info" style="text-align: center; font-size: x-large; color: ivory; font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 300px; text-shadow: 2px 2px rgb(22, 194, 122);">Choose a card to direct toward an experience</p>
 
 <script src="docs/ja.js"></script>
 </body>
