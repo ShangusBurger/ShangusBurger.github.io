@@ -4,13 +4,57 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="docs/baller.css">
-  <link href="media/carl_T.png" rel="icon" sizes="192x192">
-<title> Not so fast kiddo </title>
+  <link href="media/zoomLogo.png" rel="icon" sizes="192x192">
+<title> ZoomApp </title>
+
 </head>
-<body>
+<body style="background-image: url('media/wood.jpg');">
+  <img id="blk" src="media/1920x1080-black-solid-color-background.jpg" height="720" width="1280" style="position: absolute; margin-left: -640px; z-index: 5;">
+<div class="hoochiecoochie" id="mid" color>
+  <video id="target" style="z-index: 1;" height="720" muted>
+    <source src="media/LobbyVideo.webm" type="video/webm">
+    <source src="media/LobbyVideoQT.mov" type="video/quicktime">
+      <p>Your browser does not support this video. Sorry!</p>
+  </video>
+  <audio id="aud">
+    <source  src="media/LobbyAudio.mp3" type="audio/mp3">
+  </audio>
+  <button onclick="openZoom()" id="classnsass" style="z-index: 10; margin-top: -400px;">Join Zoom Livestream</button>
 
-<p id="mid" style="margin-top: 200px;"><span style="font-size: x-large;">This presentation will go live at 4:30 pm PST, Thursday January 21st</span><br><br>If it's already 4:30, try refreshing
-  <br><br><br><br><span style="font-size: smaller;">(best enjoyed with headphones on on a laptop or desktop computer using Google Chrome. Hopefully the site doesn't crash if you're on a different browser.)</span></p>
-
+  <a class="column in" name="coochie" hidden href="https://youtu.be/1l5vi0tGQ_0" target="_blank" onclick="pause()">
+     <div class="flip-card">
+       <div class="flip-card-inner">
+         <div class="flip-card-front">
+           <img class="card" src="media/Room-2_Back_ushav.png" class="a"></img>
+         </div>
+           <img class="card" src="media/Room-2_Front_dylanj_inv.png" class="b"></img>
+      </div>
+    </div></a>
+   <a class="column in" name="coochie" hidden style="margin-right: 750px;" href="https://playlab.live/fail.html" target="_blank" onclick="pause()">
+    <div class="flip-card">
+       <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img class="card" src="media/Room-1_Back_ushav.png" class="a"></img>
+        </div>
+          <img class="card" src="media/Room-1_Front_ushav_inv.png" class="b"></img>
+      </div>
+    </div></a>
+   <a class="column in" name="coochie" hidden style="margin-left: 750px;"href="https://www.youtube.com/watch?v=DpCRuHHTn5g" target="_blank" onclick="pause()">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+         <div class="flip-card-front">
+          <img class="card" src="media/Room-3_Back_ushav.png" class="a"></img>
+        </div>
+          <img class="card" src="media/Room-3_Front_ushav_inv.png" class="b"></img>
+      </div>
+    </div></a>
+</div> 
+<p id="preinfo" style="text-align: center; font-size: x-large; color: ivory; font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 370px; text-shadow: 2px 2px rgb(22, 194, 122);">This experience works best with headphones on a desktop or laptop using Google Chrome</p>
+<p hidden id="info" style="text-align: center; font-size: x-large; color: ivory; font-family: Georgia, 'Times New Roman', Times, serif; margin-top: 300px; text-shadow: 2px 2px rgb(22, 194, 122);">Select a card, and it will direct you toward a unique experience<br>You can always come back and try another<br><br><span style="font-size: small; color: white; text-shadow: 0 0;">(This page may look odd on non-Chrome browsers, let's just say it's part of the experience, hand picked for you)</span></p>
+<audio src="media/Cards.mp3" id="elevatormusic"></audio>
+<script src="docs/ja.js"></script>
 </body>
 </html>
+
+
+
